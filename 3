@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char pass[20], check[20];
+    int a, b;
+
+    cout << "Create Password: ";
+    cin >> pass;
+
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
+    cout << "Enter Password: ";
+    cin >> check;
+
+    if (strcmp(pass, check) == 0)
+        cout << "Result = " << a + b;
+    else
+        cout << "Wrong Password";
+
+    return 0;
+}
+
+
